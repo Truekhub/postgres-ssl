@@ -1,5 +1,5 @@
 ARG POSTGRES_VERSION=17
-FROM postgres:${POSTGRES_VERSION}
+FROM postgis/postgis:${POSTGRES_VERSION}-3.4
 
 # Install OpenSSL and sudo
 RUN apt-get update && apt-get install -y openssl sudo
